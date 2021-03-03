@@ -1,2 +1,25 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<div class="col-sm-12 col-md-10 col-md-offset-2">
+	<h1 class="page-header">Dashboard</h1>
+
+	<div class="row placeholders">
+		<div class="col-xs-6 col-sm-6 placeholder">
+
+			<h4>Products</h4>
+				<div>	
+					<%= @products.count %>
+				</div>
+		</div>
+		<div class="col-xs-6 col-sm-6 placeholder">
+			
+			<h4>Categories</h4>
+			<div class="text-light bg-dark">
+				<%= @categories.count %>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-12 col-md-10">
+		<%= link_to "Admin Products Page", admin_products_path %>
+	</div>
+</div>
+
