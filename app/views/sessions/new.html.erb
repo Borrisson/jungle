@@ -1,8 +1,8 @@
 <h1>Log in</h1>
 
-<%= form_tag "/login" do %>
-	<div class="row">
-		<div class="col-md-4">
+<div class="row">
+	<div class="col-md-4">
+		<%= form_tag "/login" do %>
 			
 			<div class="form-group">
 				<%= label_tag :email %><br />
@@ -17,7 +17,8 @@
 			<div class="form-group">
 				<%= submit_tag "Log in", class: "btn btn-primary" %>
       </div>
-		</div>
+		
+		<% end %>
 	</div>
-<% end %>
+</div>
 
