@@ -1,11 +1,33 @@
 <h1>Signup!</h1>
 
-<%= form_for :user, url: "/users" do |f| %>
+<div class="row">
+  <div class="col-md-4">
+		<%= form_for :user, url: "/users" do |f| %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+			<div class="form-group">
+			  <%= f.label :name %><br />
+  		  <%= f.text_field :name, autofocus: true, class: "form-control" %>
+			</div>
+      
+			<div class="form-group">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+      </div>
+			
+			<div class="form-group">
+        <%= f.label :password, class: "control-label" %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+			
+			<div class="form-group">
+        <%= f.label "Password Confirmation", class: "control-label" %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      </div>
+			
+			<div class="form-group">
+				<%= f.submit "Sign Up", class: "btn btn-primary" %>
+			</div>
 
-<% end %>
+		<% end %>
+	</div>
+</div>
