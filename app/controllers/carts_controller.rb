@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+  before_filter :authorize
 
   def show
   end
@@ -24,5 +25,4 @@ class CartsController < ApplicationController
     cart.delete(product_id) if cart[product_id] < 1
     update_cart cart
   end
-
 end
