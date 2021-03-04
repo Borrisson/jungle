@@ -6,7 +6,11 @@
     <%= category.products.count %>
   </td>
   <td>
-    <%= number_to_currency(category.products.average(:price_cents) / 100) %>
+		<% unless category.products.empty? %>
+			<%= number_to_currency(category.products.average(:price_cents) / 100) %>
+		<% else %>
+			<%= number_to_currency(0) %>
+		<% end %>
   </td>
   <td>
     <%= category.products.sum(:quantity) %>
