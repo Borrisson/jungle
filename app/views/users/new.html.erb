@@ -3,6 +3,12 @@
 <div class="row">
   <div class="col-md-4">
 		<%= form_for :user, url: "/users" do |f| %>
+			<% flash.each do |type, msg| %>
+  			<div class="alert alert-danger" role="alert">
+					<strong>Error signing up the account</strong><br >
+   			  <%= msg %>
+ 				</div>
+			<% end %>
 
 			<div class="form-group">
 			  <%= f.label :name %><br />
