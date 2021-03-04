@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to "/"
     else
-      redirect_to "/login"
+      redirect_to "/login", notice: "Email or password is wrong"
     end
   end
 
