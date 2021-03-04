@@ -15,6 +15,16 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to request.referrer
+    unless in_cart?(request.referrer)
+      redirect_to request.referrer
+    else
+      redirect_to "/"
+    end
+  end
+
+  private
+
+  def in_cart?(url)
+    /cart/ === url
   end
 end
