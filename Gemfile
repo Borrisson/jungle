@@ -44,7 +44,7 @@ group :development, :test do
   gem "pry-byebug"
   gem "quiet_assets"
   gem "dotenv-rails"
-  gem "rspec"
+  gem "rspec-rails", "~> 3.5"
 end
 
 group :development do
