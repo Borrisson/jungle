@@ -44,8 +44,8 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
-# The settings below are suggested to provide a good initial experience
-# with RSpec, but feel free to customize to your heart's content.
+  # The settings below are suggested to provide a good initial experience
+  # with RSpec, but feel free to customize to your heart's content.
 =begin
   # This allows you to limit a spec run to individual examples or groups
   # you care about by tagging them with `:focus` metadata. When nothing
@@ -78,7 +78,7 @@ RSpec.configure do |config|
 
   # Print the 10 slowest examples and example groups at the
   # end of the spec run, to help surface which specs are running
-  # particularly slow.
+  # particularly slow.bin/rails generate rspec:install
   config.profile_examples = 10
 
   # Run specs in random order to surface order dependencies. If you find an
