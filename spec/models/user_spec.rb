@@ -25,6 +25,11 @@ RSpec.describe User, type: :model do
           subject.password_confirmation = nil
           expect(subject).to_not be_valid
         end
+        it "must have a minimum length of 8 characters" do
+          subject.password = "passwor"
+          subject.password_confirmation = "passwor"
+          expect(subject).to_not be_valid
+        end
       end
 
       it "will not save if email already exists in data base (case_insesitive)" do
