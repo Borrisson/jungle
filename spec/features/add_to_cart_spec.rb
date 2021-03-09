@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Visitor adds from home page to login", type: :feature, js: true do
+RSpec.feature "Visitor adds item to cart", type: :feature, js: true do
   before :each do
     @category = Category.create! name: "Apparel"
 
@@ -15,7 +15,7 @@ RSpec.feature "Visitor adds from home page to login", type: :feature, js: true d
     end
   end
 
-  scenario "They see the product page of selected" do
+  scenario "They see the cart inventory increase by one" do
     # ACT
     visit root_path
 
