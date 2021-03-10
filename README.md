@@ -28,13 +28,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Final Product
 
-!["screenshot of products page"]()
+!["screenshot of products page"](https://github.com/Borrisson/jungle/blob/master/public/images/product_index.png)
 _screenshot of main page_
-!["screenshot of product details"]()
-_screenshot of all appointment states_
-!["screenshot of cart"]()
-_screenshot of all error appointment states_
-!["screenshot of admin dashboard"]()
-_screenshot of booking appointment_
-!["screenshot of login"]()
-_screenshot of deleting appointment_
+!["screenshot of product details"](https://github.com/Borrisson/jungle/blob/master/public/images/product_details.png)
+_screenshot of product details_
+!["screenshot of admin products](https://github.com/Borrisson/jungle/blob/master/public/images/admin_products_page.png)
+_screenshot of admin products_
+!["screenshot of login"](https://github.com/Borrisson/jungle/blob/master/public/images/login_view.png)
+_screenshot of login_
